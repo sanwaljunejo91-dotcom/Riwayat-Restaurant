@@ -1,0 +1,297 @@
+:root{
+    --primary-gold:white;
+    --secondary-gold: #F4C430;
+    --bg-black:#0f0f0f;
+    --dark-gray: #c2bcbc;
+    --text-white:#ffffff;
+    --text-gray: #cccccc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+/* header & navigation  */
+
+header{
+    background-color: var(--dark-gray);
+    /* border-bottom: 1px solid yellow; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 1px 0px rgba(107, 103, 103, 0.5);
+
+}
+
+
+.top-bar{
+    background-color: var(--primary-gold);
+    color: var(--bg-black);
+    padding: 3px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.call-btn{
+    background-color: var(--bg-black);
+    color: var(--primary-gold);
+    padding: 4px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid var(--bg-black);
+}
+
+.call-btn:hover{
+    background-color: gray;
+    color: black;
+    transition: 0.7;
+    box-shadow: 3px 3p 4px 3px rgb(138, 2, 2);
+}
+
+nav{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 5px 5px;
+    /* border: 2px solid yellow; */
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 30px;
+    font-family: cursive;
+    text-transform: uppercase;
+    background-color: gray;
+    color: var(--primary-gold);
+    padding: 3px;
+    letter-spacing: 2px;
+    border: 2px solid var(--primary-gold);
+    box-shadow: 1px 1px  5px 5px black;
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+    
+}
+
+nav a{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav a:hover{
+color: rgb(0, 0, 0);
+transition: 0.7s;
+font-size: 1.4rem;
+
+}
+
+#home{
+    height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./img/riwayat_restaurant_cover.jpg);
+      z-index: 0.9;
+      background-size:cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+}
+
+#home h1{
+    font-size: 4rem;
+    color:var(--primary-gold);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 4 px 5px white;
+    border: 1px solid var(--primary-gold);
+    padding: 20px;
+    box-shadow: 1px 1px 3px 2px white;
+    border-radius: 5px;
+}
+
+#home p{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    border: 1px solid white;
+}
+
+.cta-button{
+    padding: 10px 20px;
+    background-color: gray;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.cta-button:hover{
+    background-color: rgb(65, 63, 63);
+    color: white;
+    
+transition: 0.2s;
+}
+
+#menu{
+    padding: 60px 5%;
+    background-color: var(--bg-black);
+}
+
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    /* display: inline-block; */
+    padding-bottom: 10px;
+    /* transform:translateX(-50%); */
+
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.menu-category h3{
+background-color: gray;
+color: #000000;
+border-bottom: 1px dashed gray;
+/* padding-bottom: 10px; */
+margin-bottom: 10px;
+font-size: 1.3rem;
+text-transform: uppercase;
+text-align: center;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border-bottom: 1px dotted white;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.item-name{
+    font-weight: 500;
+    color: white;
+}
+
+.item-price{
+    color: white;
+    font-weight: bolder;
+}
+
+/* contact section  */
+
+
+#contact{
+    padding: 60px 5%;
+    background-color: #292828;
+    text-align: center;
+
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-info{
+    /* flex:1; */
+    /* min-width: 30px; */
+    text-align: left;
+    padding: 20px;
+    /* border-left: 4px solid white; */
+}
+
+.contact-info h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+
+}
+
+.contact-info p{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+iframe{
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border: 2px solid rgb(228, 223, 223);
+    box-shadow: 2px 2px 3px 5px black;
+    border-radius: 5px;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+@media(max-width:768px)
+{
+    .navliks
+    {
+        display: none;
+    }
+
+    .top-bar{
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    #home h1{
+        font-size: 2.5rem;
+    }
+        .menu-container{
+            grid-template-columns: 1fr;
+        }
+    
+    
+
+}
