@@ -280,6 +280,10 @@ footer{
         display: none;
     }
 
+    #home{
+        height: 50vh;
+    }
+
     .top-bar{
         flex-direction: column;
         gap: 5px;
